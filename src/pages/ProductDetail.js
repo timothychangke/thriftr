@@ -4,8 +4,10 @@ function ProductDetailPage() {
     const params = useParams()
     return(
         <>
-        <h1>This is the detail of Product </h1>
-        <p>{params.productId}</p>
+        <main>
+            <h1>This is the detail of Product </h1>
+            <p>{params.productId}</p>
+        </main>
         </>
         
     )

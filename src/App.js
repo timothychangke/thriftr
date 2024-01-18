@@ -7,6 +7,7 @@ import RootLayout from './pages/Root';
 import TryPage from './pages/Try';
 import ErrorPage from './pages/Error';
 import ProductDetailPage from './pages/ProductDetail';
+import Cart from './pages/Cart';
 
 function App() {
   const router = createBrowserRouter([
@@ -25,6 +26,10 @@ function App() {
       {
         path:'/try',
         element: <TryPage />
+      }, 
+      {
+        path:'/cart',
+        element: <Cart />
       }, 
     ]}
     

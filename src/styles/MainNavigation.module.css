@@ -1,8 +1,19 @@
+* {
+  margin: 0;
+}
+
+.logo {
+  height: 60px;
+  object-fit: contain;
+  width: 100vw;
+}
+
 .header {
-  max-width: 60rem;
-  padding: 2rem;
+  max-width: 50rem;
+  margin: auto;
+  padding: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .list {
@@ -17,6 +28,6 @@
 }
 
 .listItem {
-  padding-left: 5rem;
+  padding-left: 10rem;
 
 }

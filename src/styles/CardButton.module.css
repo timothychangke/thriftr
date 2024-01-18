@@ -1,0 +1,42 @@
+.buttons {
+    position: fixed;
+    bottom: 7vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.buttons_replay {
+    background-color: white;
+    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3);
+    padding: 1vw;
+    color: #f5b748;
+}
+
+.buttons_close {
+    background-color: white;
+    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3);
+    padding: 1vw;
+    color: #ec5e6f;
+}
+
+.buttons_star {
+    background-color: white;
+    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3);
+    padding: 1vw;
+    color: #62b4f9;
+}
+
+.buttons_favorite {
+    background-color: white;
+    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3);
+    padding: 1vw;
+    color: #76e2b3;
+}
+
+.buttons_lightning {
+    background-color: white;
+    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3);
+    padding: 1vw;
+    color: #915dd1;
+}
