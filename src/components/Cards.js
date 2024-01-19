@@ -25,7 +25,7 @@ function Cards() {
     }, []);
 
     const swiped = (direction, cloth) => {
-        if (direction === 'left') {
+        if (direction === 'right') {
           cartCtx.addItem(cloth)
         }
     };
