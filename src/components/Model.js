@@ -7,27 +7,39 @@ import classes from '../styles/Model.module.css';
 import Box from '@mui/material/Box';
 import SliderBar from './SliderBar';
 
+import { ptpToShoulderLength, torsoToHeight, waistToWaistLength } from '../util/scaling';
+
 import { useState } from 'react';
 
 function Model() {
     const [userMeasurements, setUserMeasurements] = useState({
         ptp: 26,
-        torse: 28,
+        torso: 28,
         waist: 31
     });
     function handleMeasurementChange(value, type) {
-        let prevState = userMeasurements
+        let prevState = userMeasurements;
         if (type === 'ptp') {
-            setUserMeasurements({...prevState, ptp: value})
-        }
-        else if (type === "torso") {
+            setUserMeasurements({ ...prevState, ptp: value });
+        } else if (type === 'torso') {
             setUserMeasurements({ ...prevState, torso: value });
-        } else if (type === "waist") {
+        } else if (type === 'waist') {
             setUserMeasurements({ ...prevState, waist: value });
         } else {
             return;
         }
     }
+    const torsoStyling = {
+        'grid-template-rows': `18vh 6vh ${torsoToHeight(userMeasurements['torso'])}vh`
+    };
+    const ptpStyling = {
+        right: { "left": `${ptpToShoulderLength(userMeasurements['ptp'])}vw` },
+        left: { "right": `${ptpToShoulderLength(userMeasurements['ptp'])}vw`}
+    };
+    const waistStyling = {
+        right: { right: `${waistToWaistLength(userMeasurements['waist'])}vw` },
+        left: { left: `${waistToWaistLength(userMeasurements['waist'])}vw` }
+    };
     return (
         <>
             <div className={classes.slider}>
@@ -64,7 +76,7 @@ function Model() {
                 </Box>
             </div>
             <div className={classes.big_container}>
-                <div className={classes.model_container}>
+                <div className={classes.model_container} style={torsoStyling}>
                     <div className={classes.head}>
                         <img
                             src={head}
@@ -72,28 +84,40 @@ function Model() {
                             className={classes.head_img}
                         />
                     </div>
-                    <div className={classes.left_arm}>
+                    <div
+                        className={classes.left_arm}
+                        style={ptpStyling['left']}
+                    >
                         <img
                             src={right_hand}
                             alt="left_hand"
                             className={classes.left_arm_img}
                         />
                     </div>
-                    <div className={classes.right_arm}>
+                    <div
+                        className={classes.right_arm}
+                        style={ptpStyling['right']}
+                    >
                         <img
                             src={right_hand}
                             alt="right_hand"
                             className={classes.right_arm_img}
                         />
                     </div>
-                    <div className={classes.left_leg}>
+                    <div
+                        className={classes.left_leg}
+                        style={waistStyling['left']}
+                    >
                         <img
                             src={left_leg}
                             alt="left_leg"
                             className={classes.left_leg_img}
                         />
                     </div>
-                    <div className={classes.right_leg}>
+                    <div
+                        className={classes.right_leg}
+                        style={waistStyling['right']}
+                    >
                         <img
                             src={right_leg}
                             alt="right_leg"
