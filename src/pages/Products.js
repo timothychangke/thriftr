@@ -1,5 +1,5 @@
-import Cards from "../components/Cards";
-import CardButtons from "../components/CardButtons";
+import Cards from '../components/Cards';
+import CardButtons from '../components/CardButtons';
 
 function ProductsPage() {
     return (
@@ -8,7 +8,7 @@ function ProductsPage() {
             <Cards />
             <CardButtons />
         </>
-    )
+    );
 }
 
 export default ProductsPage;

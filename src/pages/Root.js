@@ -1,18 +1,18 @@
-import MainNavigation from "../components/MainNavigation"
-import { Outlet } from "react-router-dom"
+import MainNavigation from '../components/MainNavigation';
+import { Outlet } from 'react-router-dom';
+import { CartContextProvider } from '../store/CartContext';
 
-import classes from '../styles/RootLayout.module.css'
+import classes from '../styles/RootLayout.module.css';
 
 function RootLayout() {
     return (
-        <>
-        <MainNavigation />
-        <main className={classes.content}>
-            <Outlet />
-        </main>
-        </>
-        
-    )
+        <CartContextProvider>
+            <MainNavigation />
+            <main className={classes.content}>
+                <Outlet />
+            </main>
+        </CartContextProvider>
+    );
 }
 
-export default RootLayout
+export default RootLayout;

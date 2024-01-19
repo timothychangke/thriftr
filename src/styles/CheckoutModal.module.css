@@ -1,0 +1,66 @@
+.modal_container {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 30em;
+}
+
+.btn {
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px #ccc;
+    font-size: 1rem;
+}
+
+.btn_submit {
+    background-color: #006400;
+}
+
+.btn_cancel {
+    background-color: #8b0000;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+}
+
+.modal_content {
+    margin-bottom: 2rem;
+}
+
+.modal_footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cartModalItems {
+    list-style-type: none;
+    margin-bottom: 2vh;
+    padding-right: 40px;
+}
+
+.cartTotal {
+    margin-top: 1vh;
+}
+

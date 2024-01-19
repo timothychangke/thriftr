@@ -6,37 +6,23 @@
     justify-content: space-evenly;
 }
 
-.buttons_replay {
+.button {
     background-color: white;
-    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.3);
     padding: 1vw;
-    color: #f5b748;
 }
 
-.buttons_close {
+/* .heart {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    display: inline;
     background-color: white;
-    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3);
-    padding: 1vw;
-    color: #ec5e6f;
-}
+    box-shadow: 0px 10px 53px 0px rgba(0, 0, 0, 0.3);
+} */
 
-.buttons_star {
-    background-color: white;
-    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3);
-    padding: 1vw;
-    color: #62b4f9;
-}
-
-.buttons_favorite {
-    background-color: white;
-    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3);
-    padding: 1vw;
-    color: #76e2b3;
-}
-
-.buttons_lightning {
-    background-color: white;
-    box-shadow: 0px 10px 53px 0px rgba(0,0,0,0.3);
-    padding: 1vw;
-    color: #915dd1;
-}
+/* .heartIcon {
+    margin: 0px;
+    position: relative;
+    left: 50px;
+} */

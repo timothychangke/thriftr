@@ -1,33 +1,32 @@
 * {
-  margin: 0;
+    margin: 0;
 }
 
 .logo {
-  height: 60px;
-  object-fit: contain;
-  width: 100vw;
+    height: 70px;
+    object-fit: contain;
+    width: 100vw;
 }
 
 .header {
-  max-width: 50rem;
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
+    max-width: 50rem;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .list {
-  display: flex;
-  gap: 1rem;
-  list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
 }
 
 .list a {
-  text-decoration: none;
-  color: var(--color-primary-400);
+    text-decoration: none;
+    color: var(--color-primary-400);
 }
 
 .listItem {
-  padding-left: 10rem;
-
+    padding-left: 10rem;
 }

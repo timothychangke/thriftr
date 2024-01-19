@@ -7,22 +7,22 @@
     border-radius: 20px;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 15px 15px 2px rgba(0, 0, 0, 0.1);
 }
 
 .card > h3 {
     position: absolute;
     bottom: 10px;
-    mix-blend-mode:darken;
+    mix-blend-mode: darken;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .cardContainer {
-    display:inline-flex;
+    display: inline-flex;
     justify-content: center;
     margin-top: 5vh;
 }
 
-.swipe{
+.swipe {
     position: absolute;
 }
