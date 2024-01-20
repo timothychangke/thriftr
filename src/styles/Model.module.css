@@ -9,13 +9,13 @@
     width: 50%;
 }
 
-.model_container .shirt {
+/*.model_container .shirt {
     grid-column: 1;
     grid-row: 1;
-}
+}*/
 
 .model_container {
-    margin-top: -32vw;
+    /*margin-top: -32vw;*/
     display: grid;
     /* grid-template-rows: 20vh 6vh 25vh; */
     grid-template-columns: 25vh 8vh 25vh;
@@ -105,4 +105,11 @@
     grid-row: 1/1;
     position: relative;
     top: 0px;
+    display: block;
+    margin-left: -80px;
+}
+
+.shirt img {
+    position: absolute;
+    z-index: 1000;
 }
