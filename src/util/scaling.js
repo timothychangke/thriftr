@@ -7,5 +7,5 @@ export function ptpToShoulderLength(ptpLength) {
 }
 
 export function waistToWaistLength(waistLength) {
-    return (waistLength - 31) * 0.5;
+    return (waistLength - 28) * 0.5;
 }

@@ -51,7 +51,7 @@ function Model() {
             <div className={classes.slider}>
                 <h3>Enter your measurements: </h3>
                 <br />
-                <Box sx={{ width: 300 }}>
+                <Box sx={{ width: 282 }}>
                     <SliderBar
                         className={classes.slider_bar}
                         sliderText="Pit to Pit Length(cm)"

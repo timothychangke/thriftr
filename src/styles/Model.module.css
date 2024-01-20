@@ -1,14 +1,16 @@
+.mega_container {
+    display: flex;
+}
 .big_container {
-    margin-left: 460px;
-    margin-top: 100px;
+    margin-left: 100px;
+    /*margin-top: 100px;*/
     display: grid;
     grid-template-columns: 1fr;
     grid-template-columns: 1fr;
     position: relative;
-    bottom: 150px;
+    /*bottom: 150px;*/
     width: 50%;
     height: auto;
-   
 }
 
 /*.model_container .shirt {
@@ -97,13 +99,14 @@
 .slider {
     padding: 1.5vw;
     margin-left: 5vw;
-    width: 90%;
+    width: 80%;
     max-width: 300px;
     align-items: center;
     justify-content: center;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
     overflow: scroll;
+    height:300px;
 }
 
 .slider_bar {
@@ -112,18 +115,19 @@
 }
 
 .shirt {
-    margin-top: 150px;
+    margin-top: 180px;
     grid-column: 1/1;
     grid-row: 1/1;
     position: relative;
     top: 0px;
     display: block;
-    margin-left: -160px;
+    margin-left: -210px;
 
 }
 
 .shirt img {
     position: absolute;
     z-index: 1000;
+    transform: scale(1.2);
 
 }
