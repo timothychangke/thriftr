@@ -82,7 +82,6 @@ function Model() {
                 </Box>
             </div>
             <div className={classes.big_container}>
-                <Shirt />
                 <div className={classes.model_container} style={torsoStyling}>
                     <div className={classes.head}>
                         <img
@@ -91,6 +90,7 @@ function Model() {
                             className={classes.head_img}
                         />
                     </div>
+                    <Shirt />
                     <div
                         className={classes.left_arm}
                         style={ptpStyling['left']}
