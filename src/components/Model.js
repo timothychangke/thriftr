@@ -36,7 +36,7 @@ function Model() {
         }
     }
     const torsoStyling = {
-        'grid-template-rows': `18vh 6vh ${torsoToHeight(userMeasurements['torso'])}vh`
+        'grid-template-rows': `120px 40px ${torsoToHeight(userMeasurements['torso'])}px`
     };
     const ptpStyling = {
         right: { left: `${ptpToShoulderLength(userMeasurements['ptp'])}vw` },
