@@ -1,5 +1,5 @@
 export function torsoToHeight(torsoLength) {
-    return torsoLength - 3;
+    return (torsoLength *5) +100;
 }
 
 export function ptpToShoulderLength(ptpLength) {
