@@ -1,11 +1,21 @@
 .big_container {
-    display: flex;
-    justify-content: center;
+    margin-left: 460px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    position: relative;
+    bottom: 50vh;
+    width: 50%;
+}
+
+.model_container .shirt {
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .model_container {
-    position: relative;
-    bottom: 22vh;
+    margin-top: -32vw;
     display: grid;
     /* grid-template-rows: 20vh 6vh 25vh; */
     grid-template-columns: 25vh 8vh 25vh;
@@ -19,7 +29,7 @@
 }
 
 .head_img {
-    height: 20vh;
+    height: 200px;
     object-fit: contain;
 }
 
@@ -32,7 +42,7 @@
 }
 
 .right_arm_img {
-    height: 12vh;
+    height: 120px;
     object-fit: contain;
 }
 
@@ -44,7 +54,7 @@
 }
 
 .left_arm_img {
-    height: 12vh;
+    height: 120px;
     object-fit: contain;
 }
 
@@ -52,23 +62,23 @@
     grid-row: 4/5;
     grid-column: 3/4;
     padding-right: 4vw;
-    position: relative
+    position: relative;
 }
 
 .left_leg_img {
-    height: 45vh;
+    height: 420px;
     object-fit: contain;
 }
 
 .right_leg {
     grid-row: 4/5;
     grid-column: 1/2;
-    padding-left: 2vw;
+    padding-left: 20px;
     position: relative;
 }
 
 .right_leg_img {
-    height: 45vh;
+    height: 420px;
     object-fit: contain;
 }
 
@@ -81,10 +91,18 @@
     justify-content: center;
     box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 4px;
-    overflow:scroll;
+    overflow: scroll;
 }
 
 .slider_bar {
     color: grey;
     width: 100%;
+}
+
+.shirt {
+    margin-top: 150px;
+    grid-column: 1/1;
+    grid-row: 1/1;
+    position: relative;
+    top: 0px;
 }

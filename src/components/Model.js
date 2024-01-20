@@ -3,11 +3,17 @@ import right_hand from '../img/right_hand.png';
 import left_leg from '../img/left_leg.png';
 import right_leg from '../img/right_leg.png';
 
+
 import classes from '../styles/Model.module.css';
 import Box from '@mui/material/Box';
 import SliderBar from './SliderBar';
 
-import { ptpToShoulderLength, torsoToHeight, waistToWaistLength } from '../util/scaling';
+import {
+    ptpToShoulderLength,
+    torsoToHeight,
+    waistToWaistLength
+} from '../util/scaling';
+import Shirt from './Shirt';
 
 import { useState } from 'react';
 
@@ -33,15 +39,15 @@ function Model() {
         'grid-template-rows': `18vh 6vh ${torsoToHeight(userMeasurements['torso'])}vh`
     };
     const ptpStyling = {
-        right: { "left": `${ptpToShoulderLength(userMeasurements['ptp'])}vw` },
-        left: { "right": `${ptpToShoulderLength(userMeasurements['ptp'])}vw`}
+        right: { left: `${ptpToShoulderLength(userMeasurements['ptp'])}vw` },
+        left: { right: `${ptpToShoulderLength(userMeasurements['ptp'])}vw` }
     };
     const waistStyling = {
         right: { right: `${waistToWaistLength(userMeasurements['waist'])}vw` },
         left: { left: `${waistToWaistLength(userMeasurements['waist'])}vw` }
     };
     return (
-        <>
+        <div className={classes.mega_container}>
             <div className={classes.slider}>
                 <h3>Enter your measurements: </h3>
                 <br />
@@ -76,6 +82,7 @@ function Model() {
                 </Box>
             </div>
             <div className={classes.big_container}>
+                <Shirt />
                 <div className={classes.model_container} style={torsoStyling}>
                     <div className={classes.head}>
                         <img
@@ -126,7 +133,7 @@ function Model() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
