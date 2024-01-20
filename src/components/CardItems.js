@@ -59,22 +59,3 @@ function CartItems() {
 
 export default CartItems;
 
-//return (
-//     <>
-//         <ul>
-//             {cartCtx.items.map((item) => (
-//                 <div className={classes.cartItem}>
-//                     <img className={classes.item_img}src={item.url} alt={`${item.name}`}/>
-//                     <li key={item.key} className={classes.cartModalItems}>
-//                         <p>Product: {item.name}</p>
-//                         <p>Sizing: {item.size}</p>
-//                         <p>Price: {item.name} - {currencyFormatter.format(item.price)}</p>
-//                     </li>
-//                 </div>
-//             ))}
-//         </ul>
-//         <h3 className={classes.cartTotal}>
-//             Your total is: {currencyFormatter.format(cartTotal)}
-//         </h3>
-//     </>
-// );

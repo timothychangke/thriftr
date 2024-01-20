@@ -10,12 +10,19 @@
     padding-top: 10vh;
   }
 
-
-
 .centerText {
   font-family: 'Lucida', monospace;
   padding-top: 20vh;
   padding-bottom: 3vh;
 }
 
+.main{
+  position: relative;
+  z-index: 100;
+}
 
+.background{
+    background-image: url("../img/clothes_backdrop.png");
+    background-size:cover;
+    height: 90vh;
+}

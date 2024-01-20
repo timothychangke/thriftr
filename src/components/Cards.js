@@ -6,12 +6,12 @@ import CartContext from '../store/CartContext';
 
 function Cards() {
     const [clothes, setClothes] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const cartCtx = useContext(CartContext);
     useEffect(() => {
         async function fetchClothes() {
-            setIsLoading(true);
-            const unsubscribe = database
+            console.log(isLoading)
+            const unsubscribe = await database
                 .collection('clothes')
                 .onSnapshot((snapshot) => {
                     setClothes(snapshot.docs.map((doc) => doc.data()));
@@ -22,7 +22,7 @@ function Cards() {
             };
         }
         fetchClothes();
-    }, []);
+    }, [isLoading, setIsLoading]);
 
     const swiped = (direction, cloth) => {
         if (direction === 'right') {

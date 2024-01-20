@@ -19,7 +19,7 @@ function CardButtons() {
             <IconButton className={classes.button} style={{ color: '#ec5e6f' }}>
                 <CloseIcon fontSize="large" />
             </IconButton>
-            <IconButton className={classes.button} style={{ color: '#62b4f9' }}>
+            <IconButton className={classes.button} style={{ color: '#62b4f9' }} onClick={() => }>
                 <ShoppingCartIcon fontSize="large" />
             </IconButton>
             <IconButton className={classes.button} style={{ color: '#76e2b3' }}>
