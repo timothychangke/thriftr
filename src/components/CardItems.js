@@ -32,6 +32,9 @@ function CartItems() {
                                     <br /><br /><br />
                                     {Object.keys(item.sizing).map(key => <p>{`${key}: ${item.sizing[key]}`}</p>)}
                                     {/* <p>{item.sizing.map((attr) => <p>{attr}</p>)}</p> */}
+                                    <br />
+                                    <button className={classes.button} onClick={() => cartCtx.removeItem(item.id)}> Remove</button>
+
                                 </div>
                             </div>
                         ))}
