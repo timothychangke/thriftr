@@ -1,6 +1,12 @@
 
 # Welcome to 'thriftr' - The Ultimate Virtual Thrifting Experience! 🛍️✨
 
+
+
+https://github.com/timothychangke/thriftr/assets/101695218/37066078-49c2-4d9f-8e5f-c3a28e2dc9e2
+
+
+
 ## Introduction
 
 🚀 Embark on a Thrifting Revolution with 'thriftr' at the HacknRoll Hackathon! Say goodbye to the days of trekking to ulu and spending endless hours sifting through mountains of clothes. 🌟
