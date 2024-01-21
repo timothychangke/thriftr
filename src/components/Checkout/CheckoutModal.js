@@ -1,9 +1,9 @@
-import classes from "../styles/CheckoutModal.module.css"
-import React, { useContext} from 'react';
-import CartContext from '../store/CartContext';
-import { currencyFormatter } from '../util/formatting.js';
+import classes from '../../styles/CheckoutModal.module.css';
+import React, { useContext } from 'react';
+import CartContext from '../../store/CartContext';
+import { currencyFormatter } from '../../util/formatting.js';
 
-function CheckoutModal({children, onSubmit, onClose}) {
+function CheckoutModal({ children, onSubmit, onClose }) {
     const cartCtx = useContext(CartContext);
     const cartTotal = cartCtx.items.reduce(
         (totalPrice, item) => totalPrice + item.price,
@@ -24,12 +24,14 @@ function CheckoutModal({children, onSubmit, onClose}) {
                                 key={item.key}
                                 className={classes.cartModalItems}
                             >
-                                {item.name} - {currencyFormatter.format(item.price)}
+                                {item.name} -{' '}
+                                {currencyFormatter.format(item.price)}
                             </li>
                         ))}
                     </ul>
                     <hr />
-                    <h3 className={classes.cartTotal}>Your total is: {currencyFormatter.format(cartTotal)}
+                    <h3 className={classes.cartTotal}>
+                        Your total is: {currencyFormatter.format(cartTotal)}
                     </h3>
                 </div>
                 <div className={classes.modal_footer}>
@@ -51,4 +53,4 @@ function CheckoutModal({children, onSubmit, onClose}) {
     );
 }
 
-export default CheckoutModal
+export default CheckoutModal;

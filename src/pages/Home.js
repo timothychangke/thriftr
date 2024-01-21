@@ -1,8 +1,6 @@
 import classes from '../styles/Home.module.css';
-import { motion } from 'framer-motion';
-
 import Button from '@mui/material/Button';
-import BubbleText from '../components/BubbleText'
+import BubbleText from '../components/HomePage/BubbleText'
 
 function HomePage() {
     return (
@@ -10,7 +8,7 @@ function HomePage() {
             <div className={classes.background}>
                 <main className={classes.main}>
                     <div className={classes.bubbleContainer}>
-                        <div className="grid h-screen place-content-center bg-black">
+                        <div>
                             <BubbleText text="Thriftr - Fall in Love with Preloved Items" />
                         </div>
                     </div>
@@ -21,9 +19,10 @@ function HomePage() {
                         of today
                     </div>
                     <Button
-                        className={classes.Button}
+                        className={classes.button}
                         href="/products"
                         variant="outlined"
+                        style={{"color": "darkred", "borderColor": "darkred"}}
                     >
                         Start Shopping
                     </Button>

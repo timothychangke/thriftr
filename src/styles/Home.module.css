@@ -26,3 +26,8 @@
     background-size:cover;
     height: 90vh;
 }
+
+.button {
+  color: darkred;
+  border-color: darkred;
+}

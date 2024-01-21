@@ -1,4 +1,4 @@
-import MainNavigation from '../components/MainNavigation';
+import MainNavigation from '../components/Header/MainNavigation';
 import { Outlet } from 'react-router-dom';
 import { CartContextProvider } from '../store/CartContext';
 

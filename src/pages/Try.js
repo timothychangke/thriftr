@@ -1,4 +1,4 @@
-import Model from "../components/Model"
+import Model from "../components/Fitting/Model"
 
 function TryPage() {
     return (

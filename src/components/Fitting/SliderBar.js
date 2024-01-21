@@ -1,5 +1,5 @@
 import Slider from '@mui/material/Slider';
-import classes from '../styles/Model.module.css';
+import classes from '../../styles/Model.module.css';
 
 function SliderBar({
     sliderText,
