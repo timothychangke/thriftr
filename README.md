@@ -3,7 +3,7 @@
 
 
 
-https://github.com/timothychangke/thriftr/assets/101695218/37066078-49c2-4d9f-8e5f-c3a28e2dc9e2
+https://github.com/timothychangke/thriftr/assets/101695218/36b11e4a-796a-4319-8417-a52936133bc8
 
 
 
