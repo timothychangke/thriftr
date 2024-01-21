@@ -30,11 +30,9 @@ function MainNavigation() {
             <header className={classes.header}>
                 <nav>
                     <ul className={classes.list}>
-                        {console.log(tabs)}
                         {tabs.map((tab) => (
                             <motion.li
                                 style={{
-                                    WebkitTapHighlightColor: 'transparent',
                                     'padding-left': '10rem '
                                 }}
                                 key={tab.id}

@@ -6,8 +6,8 @@ const Cards = forwardRef(function Cards(props, ref) {
     return (
         <div>
             <main className={classes.cardContainer}>
-                {props.loadingState && <p>Loading...</p>}
-                {!props.loadingState && props.clothes.map((cloth, index) => {
+                {!props.clothes && <p>Loading...</p>}
+                {props.clothes && props.clothes.map((cloth, index) => {
                     return <Card
                         key={cloth.name}
                         ref={ref[index]}

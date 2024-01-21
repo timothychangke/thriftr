@@ -10,7 +10,6 @@ function ProductsPage() {
     const [clothes, setClothes] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(19);
     const [prevClotheStack, setPrevClotheStack] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
 
     const cartCtx = useContext(CartContext);
     const currentIndexRef = useRef(currentIndex);
@@ -29,7 +28,6 @@ function ProductsPage() {
                 .onSnapshot((snapshot) => {
                     setClothes(snapshot.docs.map((doc) => doc.data()));
                 });
-            setIsLoading(false)
             return () => {
                 unsubscribe();
             };
@@ -82,14 +80,16 @@ function ProductsPage() {
     return (
         <>
             <h1>Products Page</h1>
-            <Cards
-                key={'clothes'}
-                clothes={clothes}
-                ref={childRefs}
-                onSwipeWithCursor={swipedWithCursor}
-                onOutOfFrame={outOfFrame}
-                loadingState={isLoading}
-            />
+            <React.Suspense fallback={<h1>Loading...</h1>}>
+                <Cards
+                    key={'clothes'}
+                    clothes={clothes}
+                    ref={childRefs}
+                    onSwipeWithCursor={swipedWithCursor}
+                    onOutOfFrame={outOfFrame}
+                />
+            </React.Suspense>
+
             <CardButtons
                 clothes={clothes}
                 onSwipeWithButton={swipeWithButton}

@@ -2,7 +2,6 @@ import classes from '../../styles/Model.module.css';
 
 function Shirt({ shirtNum }) {
     const classes_id = `classes.shirt${shirtNum}`;
-    console.log(classes.shirt);
     return (
         <div
             className={

@@ -6,7 +6,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { IconButton } from '@mui/material';
-
 function CardButtons({clothes, onSwipeWithButton, onGoBackWithButton}) {
     
     return (
