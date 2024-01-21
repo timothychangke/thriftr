@@ -32,32 +32,24 @@ function MainNavigation() {
                     <ul className={classes.list}>
                         {console.log(tabs)}
                         {tabs.map((tab) => (
-                            <li
-                                // className={`${
-                                //     path === tab.id ? '' : 'hover:text-white/60'
-                                // } relative rounded-full px-3 py-1.5 text-sm font-medium text-white outline-sky-400 transition focus-visible:outline-2`}
+                            <motion.li
                                 style={{
                                     WebkitTapHighlightColor: 'transparent',
                                     'padding-left': '10rem '
                                 }}
                                 key={tab.id}
                             >
-                                <NavLink to={tab.link}>
-                                    {/* {(
-                                        <motion.span
-                                            layoutId="bubble"
-                                            className="absolute inset-0 z-10 bg-white mix-blend-difference"
-                                            style={{ borderRadius: 9999 }}
-                                            transition={{
-                                                type: 'spring',
-                                                bounce: 0.2,
-                                                duration: 0.6
-                                            }}
-                                        />
-                                    )} */}
-                                    {tab.text}
-                                </NavLink>
-                            </li>
+                                <NavLink to={tab.link}>{tab.text}</NavLink>
+                                {tab.link === path && (
+                                    <motion.div layoutId="tab-indictor"
+                                        style={{
+                                            border: '1.5px solid #fd5c63',
+                                            'margin-top': '5px',
+                                            'borderWidth': '1px'
+                                        }}
+                                    ></motion.div>
+                                )}
+                            </motion.li>
                         ))}
                     </ul>
                 </nav>
