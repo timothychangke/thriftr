@@ -26,7 +26,11 @@ function ProductsPage() {
             const unsubscribe = await database
                 .collection('clothes')
                 .onSnapshot((snapshot) => {
-                    setClothes(snapshot.docs.map((doc) => doc.data()));
+                    setClothes(
+                         snapshot.docs.map((doc) => {
+                             const { encoding, ...newData } = doc.data();
+                             return newData;
+                         })
                 });
             return () => {
                 unsubscribe();
