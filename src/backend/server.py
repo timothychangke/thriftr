@@ -17,7 +17,7 @@ from firebase_admin import credentials, firestore, initialize_app
 app = Flask(__name__)
 
  # Firebase accessing
-cred = credentials.Certificate('./model_server/Data/API.json')
+cred = credentials.Certificate('./backend/Data/API.json')
 
 print("Connecting...")
 default_app = firebase_admin.initialize_app(cred)
@@ -35,7 +35,7 @@ trans = transforms.Compose([
 
 def predict(image):
     encoder = Encoder(encoded_space_dim=256,fc2_input_dim=128)
-    encoder.load_state_dict(torch.load('./model_server/Data/encoder_save.pth', map_location=torch.device('cpu')))
+    encoder.load_state_dict(torch.load('./backend/Data/encoder_save.pth', map_location=torch.device('cpu')))
     encoder.eval()
     encoding = torch.squeeze(encoder(trans(image).unsqueeze(0)),0)
     return encoding
