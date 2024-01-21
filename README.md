@@ -7,12 +7,10 @@
 
 Introducing 'thriftr' - the Tinder for Clothes! We are here to bring the joy of thrifting directly to your fingertips 🛍️ Swipe your way through a thrilling virtual thrifting experience, right from the comfort of your own home. No more sore eyes, tired hands, or aching shoulders! 🏡✨
 
-## Features
+## Features 🌈
 
-Swipe and Shop
+### Swipe and Shop
 Experience the thrill of 'thriftr' - the Tinder for Clothes! 📱 Swipe your way through a curated selection of clothes, discovering hidden gems effortlessly.
-
-## What's Coming Soon? 🌈
 
 ### Virtual Fitting Room
 No more guesswork on fit! 'thriftr' introduces personalized avatars customized to your unique measurements. Trying on clothes virtually has never been this easy! 👗👤
