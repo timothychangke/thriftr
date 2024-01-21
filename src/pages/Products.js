@@ -30,7 +30,7 @@ function ProductsPage() {
                          snapshot.docs.map((doc) => {
                              const { encoding, ...newData } = doc.data();
                              return newData;
-                         })
+                         }))
                 });
             return () => {
                 unsubscribe();
