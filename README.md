@@ -6,6 +6,7 @@
 https://github.com/timothychangke/thriftr/assets/101695218/36b11e4a-796a-4319-8417-a52936133bc8
 
 
+try it out: https://thriftr.vercel.app
 
 ## Introduction
 
