@@ -32,6 +32,11 @@ Personalized Suggestions: Fine-tuning our AI for even more accurate and personal
 User-Friendly Interface: We're committed to providing a seamless and user-friendly interface for an enjoyable thrifting journey.
 
 ## Technical Details ⚙️
+### Frontend
+
+We used Reactjs as the frontend, animating with framer-motion and Material UI libraries
+
+### Backend
 
 We built an autoencoder using PyTorch and the (clothes dataset)[https://www.kaggle.com/datasets/agrigorev/clothing-dataset-full] in Kaggle. 
 The model architecture can be found in src/backend/Data/model.py
