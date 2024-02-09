@@ -49,7 +49,7 @@ npm i
 
 ```bash
 npm start
-
+```
 Get ready to revolutionize your wardrobe with 'thriftr' – where the joy of thrifting meets the convenience of technology! 🚀🛒 #HacknRoll #ThriftingRevolution #SwipeAndShop #ComingSoon
 
 
