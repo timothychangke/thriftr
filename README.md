@@ -31,6 +31,15 @@ Even More Immersive Thrifting: We're adding features to make your virtual thrift
 Personalized Suggestions: Fine-tuning our AI for even more accurate and personalized recommendations.
 User-Friendly Interface: We're committed to providing a seamless and user-friendly interface for an enjoyable thrifting journey.
 
+## Technical Details ⚙️
+
+We built an autoencoder using PyTorch and the (clothes dataset)[https://www.kaggle.com/datasets/agrigorev/clothing-dataset-full] in Kaggle. 
+The model architecture can be found in src/backend/Data/model.py
+Using the trained encoder, we decided to encode the images in our database and recommend new clothes to users via calculating the cosine similarity. 
+User's preference/taste would be slowly averaged out with the clothes he/she choose to swipe right on. 
+
+All of this happens using Flask and calculated data is sent to our database, firebase. 
+
 ## How to Get Started
 
 ### Clone the Repository:
@@ -51,9 +60,3 @@ npm i
 npm start
 ```
 Get ready to revolutionize your wardrobe with 'thriftr' – where the joy of thrifting meets the convenience of technology! 🚀🛒 #HacknRoll #ThriftingRevolution #SwipeAndShop #ComingSoon
-
-
-
-
-
-```

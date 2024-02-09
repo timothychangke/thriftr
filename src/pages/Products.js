@@ -52,6 +52,7 @@ function ProductsPage() {
     };
 
     function swipedWithCursor(direction, cloth, index) {
+        fetch("/run").then(console.log('success')) // Algorithm
         updateCurrentIndex(index - 1);
         prevClotheStack.push(direction);
         if (direction === 'right') {
@@ -72,6 +73,7 @@ function ProductsPage() {
     };
 
     async function swipeWithButton(direction) {
+        fetch("/run").then(console.log('success')) // Algorithm
         if (first) {
             setCurrentIndex(clothes.length - 1);
             first = false;
